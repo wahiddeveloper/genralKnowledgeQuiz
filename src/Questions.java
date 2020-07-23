@@ -1,160 +1,279 @@
+import java.util.Scanner;
+import java.util.Random;
+
 public class Questions {
     private static int score;
 
-    public static void answer() { System.out.println("Answer: "); }
-    public static void whatsName() { System.out.println("Whats Your Name? "); }
-    public static void lineSpace() { System.out.println(); }
-    public static void helloName(String a) { System.out.println("Hello " + a); }
-    public static void introduction() { System.out.println("You Will be Given Ten Questions Answer The Questions By Typing The Correct Number!"); }
-    public static void readyYet() {
-        System.out.println("Are You Ready!? ");
-    }
-    public static void ohYes(String a) { if(a.equals("yes")) {
-        System.out.println("Great Lets Get Started! ");
-    } else {
-        System.out.println("Oh");
-        System.exit(0);
-    } }
-
-    public static void questionOne() {
-        System.out.println("Whats More Colder 1 Or 2? ");
-        System.out.println("1. North Pole");
-        System.out.println("2. South Pole");
-    }
-    public static void questionOneInput(String a) { if(a == ("1")) {
-        System.out.println("Well Done! Next Question!");
-        setScore();
-    } else {
-        System.out.println("Unlucky! Next Question!");
-    } }
-
-    public static void questionTwo() {
-        System.out.println("Who Is The Ceo Of Twitter? ");
-        System.out.println("1. Bill gates");
-        System.out.println("2. Jack Dorsey");
-        System.out.println("3. Biz Stone");
-    }
-    public static void questionTwoInput(String a) { if(a.equals("2")) {
-        System.out.println("Well Done! Next Question!");
-        setScore();
-    } else { System.out.println("Unlucky! Next Question!"); }
-    }
-    public static void questionThree() {
-        System.out.println("How Old Is The Oldest Person Alive Today?");
-        System.out.println("1. 102");
-        System.out.println("2. 107");
-        System.out.println("3. 119");
-        System.out.println("4. 116");
-    }
-    public static void questionThreeInput(String a) { if(a.equals("4"))  {
-        System.out.println("Well Done! Next Question!");
-        setScore();
-        } else { System.out.println("Unlucky! Next Question!");
-    }
-    }
-    public static void questionFour() {
-        System.out.println("The Great Wall of China is longer than the distance between London and Beijing, True Or false? ");
-        System.out.println("1. True");
-        System.out.println("2. False");
-    }
-    public static void questionFourInput(String a) { if(a.equals("1")) {
-        System.out.println("Well Done! Next Question");
-        setScore();
-    } else { System.out.println("Unlucky! Next Question!");
-    }
-    }
-    public static void questionFive() {
-        System.out.println("Apple Is Worth A Trillion Dollars");
-        System.out.println("1. True");
-        System.out.println("2. False");
-    }
-    public static void questionFiveInput(String a) { if(a.equals("1")) {
-        System.out.println("Well Done! Next Question!");
-        setScore();
-    } else {
-        System.out.println("Unlucky! Next Question!");
-    }
-    }
-    public static void questionSix() {
-        System.out.println("Microsoft Was Found By? ");
-        System.out.println("1. Miley Cyrus");
-        System.out.println("2. Mark Zuckerberg");
-        System.out.println("3. Jk Rowling");
-        System.out.println("4. Bill Gates");
-    }
-    public static void questionSixInput(String a) { if(a.equals("4")) {
-        System.out.println("Well Done! Next Question! ");
-        setScore();
-    } else { System.out.println("Unlucky! Next Question! "); } }
-    public static void questionSeven() {
-        System.out.println("Who Was The First Person In Space? ");
-        System.out.println("1. Neil Armstrong");
-        System.out.println("2. Alan Shepard");
-        System.out.println("3. Yuri Gagarin");
-        System.out.println("4. John Glenn");
-    }
-    public static void questionSevenInput(String a) { if(a.equals("3")) {
-        System.out.println("Well Done! Next Question!");
-        setScore();
-    } else {
-        System.out.println("Unlucky! Next Question!");
-    }
-    }
-    public static void questionEight() {
-        System.out.println("Mark Zuckerberg Only Likes Girls From Australia, True Or False? ");
-        System.out.println("1. True");
-        System.out.println("2. False");
-    }
-    public static void questionEightInput(String a) { if(a.equals("2")){
-        System.out.println("Well Done! Next Question!");
-        setScore();
-    }else {
-        System.out.println("Unlucky! Next Question! ");
-    } }
-    public static void questionNine() {
-        System.out.println("In which decade was Donald Trump born? ");
-        System.out.println("1. 1960s");
-        System.out.println("2. 1930s");
-        System.out.println("3. 1940s");
-        System.out.println("4. 1920s");
-    }
-    public static void questionNineInput(String a) { if(a.equals("3")) {
-        System.out.println("Well Done! Last Question!");
-        setScore();
-    } else {
-        System.out.println("Unlucky! Last Question!");
-    } }
-    public static void questionTen() {
-        System.out.println("Who Found Netflix? ");
-        System.out.println("1. Reed Hastings");
-        System.out.println("2. Donald Trump");
-        System.out.println("3. Alex Randolph");
-    }
-    public static void questionTenInput(String a) { if(a.equals("1")){
-        System.out.println("Well Done! We Are Done!");
-        setScore();
-    } else {
-        System.out.println("Unlucky! Lets See Your Score!");
-    } }
-    public static void finalScore() {
-        System.out.println("Your Final Score Is " + getScore());
-    }
-    public static void scoreOutput(int a, int b) {
-        if(a >= b) { System.out.println("Good Score!"); }
-        else { System.out.println("You can Do Better Next Time!"); }
+    public static void lineSpace() {
+        System.out.println();
     }
 
-    public static void setScore(){ score++; }
-    public static int getScore(){
+    public static void setScore() {
+        score++;
+    }
+
+    public static int getScore() {
         return score;
     }
 
-    public static void questionsData(int a){
-        switch(a){
-            case 1:
-                questionOne();
+    public static void questionsData(String a, Scanner b, int y) {
+
+        System.out.println("Whats Your Name? ");
+        a = b.next();
+        lineSpace();
+        System.out.println("Hello " + a);
+        lineSpace();
+        System.out.println("You Will be Given Ten Questions Answer The Questions By Typing The Correct Number!");
+        lineSpace();
+        System.out.println("Are You Ready?!");
+        a = b.next();
+        if (a.equals("yes")) {
+            lineSpace();
+            System.out.println("Lets Get Started!");
+        } else {
+            System.out.println("Oh");
+            System.exit(0);
+        }
+
+        Random number = new Random();
+        int i = 0;
+        int randomNum = number.nextInt(10) + 1;
+
+        if (randomNum > 0 - 10) {
+            System.out.println();
+        } else {
+            System.out.println();
+        }
+
+            switch (randomNum) {
+                case 1:
+                    System.out.println("Who Owns Microsoft? ");
+                    System.out.println("1. Bill gates");
+                    System.out.println("2. Jake");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                        lineSpace();
+                    }
+                    break;
+                case 2:
+                    System.out.println("Who Is The Ceo Of Twitter? ");
+                    System.out.println("1. Jack Dorsey");
+                    System.out.println("2. Bill Gates");
+                    System.out.println("3. Mark Zuckerberg");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                        lineSpace();
+                    }
+                    break;
+                case 3:
+                    System.out.println("Mark Zuckerberg Only Likes Australian Girls, True Or False");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+                    if (a.equals("2")) {
+                        System.out.println("Well Done! Next Question!");
+                        lineSpace();
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                        lineSpace();
+                    }
+                    break;
+                case 4:
+                    System.out.println("What Decade Was Trump Born In? ");
+                    System.out.println("1. 1960s");
+                    System.out.println("2. 1930s");
+                    System.out.println("3. 1940s");
+                    System.out.println("4. 1950s");
+                    a = b.next();
+                    if (a.equals("3")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 5:
+                    System.out.println("Apple Is Worth One Trillion Dollars, True Or False? ");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 6:
+                    System.out.println("Which One Is The Correct Definition Of Melancholy! ");
+                    System.out.println("1. An Emotion Of Rage And Anger, That Is Unexpected.");
+                    System.out.println("2. A feeling of pensive sadness, typically with no obvious cause.");
+                    a = b.next();
+                    if (a.equals("2")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 7:
+                    System.out.println("Who Was The First Human In Space? ");
+                    System.out.println("1. Neil Armstrong");
+                    System.out.println("2. Alex Cones");
+                    System.out.println("3. John Glenn");
+                    System.out.println("4. Yuri Gagarin");
+                    a = b.next();
+                    if (a.equals("4")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 8:
+                    System.out.println("What are the five colours of the Olympic rings?");
+                    System.out.println("1. Blue, yellow, black, green and red");
+                    System.out.println("2. Blue, yellow, black, pink, orange");
+                    System.out.println("3. Red, yellow, pink, orange");
+                    System.out.println("4. Green, yellow, black, green");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 9:
+                    System.out.println("Goats Can Swim, True Or False?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Last Question!");
+                        lineSpace();
+                    }
+                    break;
+                case 10:
+                    System.out.println("Cats Have Short Naps Because...");
+                    System.out.println("1. Its Fun");
+                    System.out.println("2. In The Wild Need To Be Aware");
+                    System.out.println("3. They Dont Need A Lot Of Sleep");
+                    System.out.println("4. They Will Die If They Have Long Naps");
+                    a = b.next();
+                    if (a.equals("2")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                        lineSpace();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                        lineSpace();
+                    }
+                    break;
+            }
+
+            Random digit = new Random();
+            int f = 0;
+            int randomNums = digit.nextInt(5) + 1;
+
+            if (randomNums > 0-5) {
+                System.out.println();
+            } else {
+                System.out.println();
+            }
+
+            switch (randomNums) {
+                case 1:
+                    System.out.println("Where Is Leads Castle?");
+                    System.out.println("1. Kent");
+                    System.out.println("2. London");
+                    System.out.println("3. Leeds");
+                    System.out.println("4. Southampton");
+                    a = b.next();
+                    if (a.equals("1")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next question!\n");
+                    }
+                    break;
+                case 2:
+                    System.out.println("What Is The Capital Of Switzerland?");
+                    System.out.println("1. Bangkok");
+                    System.out.println("2. London");
+                    System.out.println("3. Maine");
+                    System.out.println("4. Reykjavík");
+                    a = b.next();
+                    if (a.equals("3")) {
+                        System.out.println("Well Done Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 3:
+                    System.out.println("How Many Countries Are There In The World?");
+                    System.out.println("1. 217");
+                    System.out.println("2. 178");
+                    System.out.println("3. 298");
+                    System.out.println("4. 195");
+                    a = b.next();
+                    if (a.equals("4")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 4:
+                    System.out.println("What Was Score At The 2018 World Cup Final?");
+                    System.out.println("1. 2-2");
+                    System.out.println("2. 4-2");
+                    System.out.println("3. 3-1");
+                    System.out.println("4. 1-2");
+                    a = b.next();
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+                case 5:
+                    System.out.println("Where Are The 2028 Olympics Going T0 Be Held?");
+                    System.out.println("1. Los Angles");
+                    System.out.println("2. Germany");
+                    System.out.println("3. London");
+                    System.out.println("4. France");
+                    a = b.next();
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question!");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! Next Question!");
+                    }
+                    break;
+            }
         }
     }
-}
 //TODO: MAIN - RANDOMLY GENERATE A QUESTION UPTO 10
-//TODO: CREATE SWITCH STATEMENT
