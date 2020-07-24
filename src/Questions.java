@@ -228,7 +228,7 @@ public class Questions {
 
         Random digit = new Random();
         int f = 0;
-        int randomNums = digit.nextInt(5) + 1;
+        int randomNums = digit.nextInt(10) + 1;
 
         if (randomNums > -5) {
             System.out.println();
@@ -332,6 +332,96 @@ public class Questions {
                     System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
+            case 6 -> {
+                System.out.println("Whats More Colder North Pole Or South Pole?");
+                System.out.println("1. North Pole");
+                System.out.println("2. South Pole");
+                a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
+                if(a.equals("1")) {
+                    System.out.println("Well Done! Next Question!\n");
+                    setScore();
+                } else {
+                    System.out.println("Unlucky! The Answer Is 1!\n");
+                }
+            }
+            case 7 -> {
+                System.out.println("Who Was The First Programmer?");
+                System.out.println("1. James Smith");
+                System.out.println("2. Albert Einstein");
+                System.out.println("3. Olive Pierce");
+                System.out.println("4. Ada Lovelace");
+                a = b.next();
+
+                while(a.equals("four")) {
+                    a = "4";
+                }
+
+                if(a.equals("4")) {
+                    System.out.println("Well Done! Next Question!\n");
+                    setScore();
+                } else {
+                    System.out.println("Unlucky! The Answer Is 4!\n");
+                }
+                }
+                case 8 -> {
+                    System.out.println("Dogs Have 7 Paws, True Or False");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+                case 9 -> {
+                    System.out.println("How Old Is Earth?");
+                    System.out.println("1. 2.7 Billion Years");
+                    System.out.println("2. 28.1 Billion Years");
+                    System.out.println("3. 8.9 Billion Years");
+                    System.out.println("4. 4.54 Billion Years");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+                case 10 -> {
+                    System.out.println("When Did Adolf Hitler Die?");
+                    System.out.println("1. 1947");
+                    System.out.println("2. 1942");
+                    System.out.println("3. 1945");
+                    System.out.println("4. 1939");
+                    a = b.next();
+
+                    while(a.equals("three")) {
+                        a = "3";
+                    }
+                    if(a.equals("3")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 3!\n");
+                    }
+                }
         }
     }
 
