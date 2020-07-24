@@ -12,6 +12,7 @@ public class Questions {
     public static int getScore() {
         return score;
     }
+
     public static boolean inputValidation(String a, String b){
         String s = a.toLowerCase();
         if(s.equals("y")){ s = "yes"; }
@@ -48,6 +49,11 @@ public class Questions {
                 System.out.println("1. Bill gates");
                 System.out.println("2. Jake");
                 a = b.next();
+
+               while(a.equals("one")) {
+                   a = "1";
+               }
+
                 if ("1".equals(a)) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -62,8 +68,11 @@ public class Questions {
                 System.out.println("2. Bill Gates");
                 System.out.println("3. Mark Zuckerberg");
                 a = b.next();
-                //validation check
-                //
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -76,6 +85,11 @@ public class Questions {
                 System.out.println("1. True");
                 System.out.println("2. False");
                 a = b.next();
+
+               while(a.equals("two"))  {
+                   a = "2";
+               }
+
                 if (a.equals("2")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -90,6 +104,11 @@ public class Questions {
                 System.out.println("3. 1940s");
                 System.out.println("4. 1950s");
                 a = b.next();
+
+                while(a.equals("three")) {
+                    a = "3";
+                }
+
                 if (a.equals("3")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -102,6 +121,11 @@ public class Questions {
                 System.out.println("1. True");
                 System.out.println("2. False");
                 a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -114,6 +138,11 @@ public class Questions {
                 System.out.println("1. An Emotion Of Rage And Anger, That Is Unexpected.");
                 System.out.println("2. A feeling of pensive sadness, typically with no obvious cause.");
                 a = b.next();
+
+                while(a.equals("two"))  {
+                    a = "2";
+                }
+
                 if (a.equals("2")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -128,6 +157,11 @@ public class Questions {
                 System.out.println("3. John Glenn");
                 System.out.println("4. Yuri Gagarin");
                 a = b.next();
+
+                while(a.equals("four")) {
+                    a = "4";
+                }
+
                 if (a.equals("4")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -142,6 +176,11 @@ public class Questions {
                 System.out.println("3. Red, yellow, pink, orange");
                 System.out.println("4. Green, yellow, black, green");
                 a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -154,6 +193,11 @@ public class Questions {
                 System.out.println("1. True");
                 System.out.println("2. False");
                 a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -168,6 +212,11 @@ public class Questions {
                 System.out.println("3. They Dont Need A Lot Of Sleep");
                 System.out.println("4. They Will Die If They Have Long Naps");
                 a = b.next();
+
+                while(a.equals("two"))  {
+                    a = "2";
+                }
+
                 if (a.equals("2")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -195,6 +244,11 @@ public class Questions {
                 System.out.println("3. Leeds");
                 System.out.println("4. Southampton");
                 a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -209,6 +263,11 @@ public class Questions {
                 System.out.println("3. Maine");
                 System.out.println("4. Reykjavík");
                 a = b.next();
+
+                while(a.equals("three")) {
+                    a = "3";
+                }
+
                 if (a.equals("3")) {
                     System.out.println("Well Done Next Question!\n");
                     setScore();
@@ -223,6 +282,11 @@ public class Questions {
                 System.out.println("3. 298");
                 System.out.println("4. 195");
                 a = b.next();
+
+                while(a.equals("four")) {
+                    a = "4";
+                }
+
                 if (a.equals("4")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -237,6 +301,11 @@ public class Questions {
                 System.out.println("3. 3-1");
                 System.out.println("4. 1-2");
                 a = b.next();
+
+                while(a.equals("two"))  {
+                    a = "2";
+                }
+
                 if (a.equals("2")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
@@ -245,12 +314,17 @@ public class Questions {
                 }
             }
             case 5 -> {
-                System.out.println("Where Are The 2028 Olympics Going T0 Be Held?");
+                System.out.println("Where Are The 2028 Olympics Going To Be Held?");
                 System.out.println("1. Los Angles");
                 System.out.println("2. Germany");
                 System.out.println("3. London");
                 System.out.println("4. France");
                 a = b.next();
+
+                while(a.equals("one")) {
+                    a = "1";
+                }
+
                 if (a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
