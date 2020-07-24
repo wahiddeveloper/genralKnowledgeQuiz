@@ -5,10 +5,6 @@ public class Questions {
     private static int score;
     private static final String yesValue = "yes";
 
-    public static void lineSpace() {
-        System.out.println();
-    }
-
     public static void setScore() {
         score++;
     }
@@ -25,7 +21,7 @@ public class Questions {
     public static void questionsData(String a, Scanner b, int y) {
         System.out.println("Whats Your Name? ");
         a = b.next();
-        System.out.println("Hello " + a);
+        System.out.println("Hello " + a + "\n");
         System.out.println("You Will be Given Ten Questions Answer The Questions By Typing The Correct Number!\n");
         String ready = "Are You Ready";
         System.out.println(ready);
@@ -35,7 +31,7 @@ public class Questions {
 
         while (!userInputValid) {
             System.out.println("Invalid input!");
-            System.out.println("Try yes or no!");
+            System.out.println("Try yes or no!\n");
             System.out.println(ready);
             a = b.next();
             userInputValid = inputValidation(a, yesValue);
@@ -56,9 +52,8 @@ public class Questions {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
-                lineSpace();
             }
             case 2 -> {
 
@@ -73,9 +68,8 @@ public class Questions {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!\n");
+                    System.out.println("Unlucky! The Answer Is 1! \n");
                 }
-                lineSpace();
             }
             case 3 -> {
                 System.out.println("Mark Zuckerberg Only Likes Australian Girls, True Or False");
@@ -83,12 +77,10 @@ public class Questions {
                 System.out.println("2. False");
                 a = b.next();
                 if (a.equals("2")) {
-                    System.out.println("Well Done! Next Question!");
-                    lineSpace();
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
-                    lineSpace();
+                    System.out.println("Unlucky! The Answer Is 2!\n");
                 }
             }
             case 4 -> {
@@ -99,11 +91,10 @@ public class Questions {
                 System.out.println("4. 1950s");
                 a = b.next();
                 if (a.equals("3")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 3!\n");
                 }
             }
             case 5 -> {
@@ -112,11 +103,10 @@ public class Questions {
                 System.out.println("2. False");
                 a = b.next();
                 if (a.equals("1")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
             case 6 -> {
@@ -125,11 +115,10 @@ public class Questions {
                 System.out.println("2. A feeling of pensive sadness, typically with no obvious cause.");
                 a = b.next();
                 if (a.equals("2")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 2!\n");
                 }
             }
             case 7 -> {
@@ -140,11 +129,10 @@ public class Questions {
                 System.out.println("4. Yuri Gagarin");
                 a = b.next();
                 if (a.equals("4")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 4!!\n");
                 }
             }
             case 8 -> {
@@ -155,11 +143,10 @@ public class Questions {
                 System.out.println("4. Green, yellow, black, green");
                 a = b.next();
                 if (a.equals("1")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
             case 9 -> {
@@ -168,12 +155,10 @@ public class Questions {
                 System.out.println("2. False");
                 a = b.next();
                 if (a.equals("1")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Last Question!");
-                    lineSpace();
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
             case 10 -> {
@@ -184,12 +169,10 @@ public class Questions {
                 System.out.println("4. They Will Die If They Have Long Naps");
                 a = b.next();
                 if (a.equals("2")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
-                    lineSpace();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
-                    lineSpace();
+                    System.out.println("Unlucky! The Answer Is 2!\n");
                 }
             }
         }
@@ -216,7 +199,7 @@ public class Questions {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next question!\n");
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
             case 2 -> {
@@ -230,7 +213,7 @@ public class Questions {
                     System.out.println("Well Done Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 3!\n");
                 }
             }
             case 3 -> {
@@ -244,7 +227,7 @@ public class Questions {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 4!\n");
                 }
             }
             case 4 -> {
@@ -255,10 +238,10 @@ public class Questions {
                 System.out.println("4. 1-2");
                 a = b.next();
                 if (a.equals("2")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 2!\n");
                 }
             }
             case 5 -> {
@@ -269,16 +252,13 @@ public class Questions {
                 System.out.println("4. France");
                 a = b.next();
                 if (a.equals("1")) {
-                    System.out.println("Well Done! Next Question!");
+                    System.out.println("Well Done! Next Question!\n");
                     setScore();
                 } else {
-                    System.out.println("Unlucky! Next Question!");
+                    System.out.println("Unlucky! The Answer Is 1!\n");
                 }
             }
         }
     }
 
 }
-//TODO: add regex take out stupid linespace
-// add method to check user validation
-//TODO: add correct answer if question is answered wrong

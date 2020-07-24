@@ -6,6 +6,6 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         Questions.questionsData(questions, input, Questions.getScore());
-        System.out.print(Questions.getScore());
+        System.out.print("Your Final Score Is " + Questions.getScore());
     }
 }
