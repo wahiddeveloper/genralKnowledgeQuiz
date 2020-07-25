@@ -20,6 +20,7 @@ public class Questions {
     }
 
     public static void questionsData(String a, Scanner b, int y) {
+        System.out.println("Welcome To The General Knowledge Quiz!\n");
         System.out.println("Whats Your Name? ");
         a = b.next();
         System.out.println("Hello " + a + "\n");
@@ -341,7 +342,6 @@ public class Questions {
                 while(a.equals("one")) {
                     a = "1";
                 }
-
                 if(a.equals("1")) {
                     System.out.println("Well Done! Next Question!\n");
                     setScore();
