@@ -21,6 +21,7 @@ public class Questions {
 
     public static void questionsData(String a, Scanner b, int y) {
         System.out.println("Welcome To The General Knowledge Quiz!\n");
+        System.out.println("This Will Be Fun!");
         System.out.println("Whats Your Name? ");
         a = b.next();
         System.out.println("Hello " + a + "\n");
