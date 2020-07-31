@@ -424,6 +424,208 @@ public class Questions {
                     }
                 }
         }
-    }
+            Random three = new Random();
+            int x = 0;
+            int rando = three.nextInt(10) + 1;
 
-}
+            switch(rando) {
+
+                case 1 -> {
+                    System.out.println("What Is A Heliport?");
+                    System.out.println("1. Helicopter Part");
+                    System.out.println("2. Airport Of Helicopter");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 2 -> {
+                    System.out.println("What IS The Intelligence Agency Of The UK?");
+                    System.out.println("1. Royal Navy");
+                    System.out.println("2. British Army");
+                    System.out.println("3. RAF");
+                    System.out.println("4. MI5");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 3 -> {
+                    System.out.println("How Many Teeth Does An Adult Have?");
+                    System.out.println("1. 32");
+                    System.out.println("2. 23");
+                    System.out.println("3. 19");
+                    System.out.println("4. 28");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 1!\n");
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("How Many Eggs Does The Average Chicken Lay A Year?");
+                    System.out.println("1. 19");
+                    System.out.println("2. 391");
+                    System.out.println("3. 265");
+                    System.out.println("4. 113");
+                    a = b.next();
+
+                    while(a.equals("three")) {
+                        a = "3";
+                    }
+
+                    if(a.equals("3")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 5 -> {
+                    System.out.println("What Is The Capital Of Spain?");
+                    System.out.println("1. Madrid");
+                    System.out.println("2. Barcelona");
+                    System.out.println("3. Valencia");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                            System.out.println("Well Done! Next Question!\n");
+                            setScore();
+                        } else {
+                            System.out.println("Unlucky! The Answer Is 1!\n");
+                        }
+                    }
+
+                case 6 -> {
+                    System.out.println("Where Would You Find The River Thames?");
+                    System.out.println("1. Surrey");
+                    System.out.println("2. London");
+                    System.out.println("3. Leicester");
+                    System.out.println("4. Manchester");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 7 -> {
+                    System.out.println("How Many Legs Does A Lobster Have?");
+                    System.out.println("1. 6");
+                    System.out.println("2. 10");
+                    System.out.println("3. 4");
+                    System.out.println("4. 8");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 8 -> {
+                    System.out.println("Enchiladas Originated In Which Country?");
+                    System.out.println("1. Spain");
+                    System.out.println("2. Italy");
+                    System.out.println("3. Portugal");
+                    System.out.println("4. Mexico");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 9 -> {
+                    System.out.println("In 'The Jungle Book' What Kind Of Animal Is a Baloo?");
+                    System.out.println("1. Bear");
+                    System.out.println("2. Tiger");
+                    System.out.println("3. Wolf");
+                    System.out.println("4. Elephant");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question!\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 1!\n");
+                    }
+                }
+
+                case 10 -> {
+                    System.out.println("Where Was Prince Phillip Born?");
+                    System.out.println("1. United Kingdom");
+                    System.out.println("2. Greece");
+                    System.out.println("3. America");
+                    System.out.println("4. Germany");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+            }
+        }
+    }
