@@ -49,7 +49,9 @@ public class Questions {
             case 1 -> {
                 System.out.println("Who Owns Microsoft? ");
                 System.out.println("1. Bill gates");
-                System.out.println("2. Jake");
+                System.out.println("2. Mark Zuckenberg");
+                System.out.println("3. James Doe");
+                System.out.println("4. Elon Musk");
                 a = b.next();
 
                while(a.equals("one")) {
@@ -229,14 +231,7 @@ public class Questions {
         }
 
         Random digit = new Random();
-        int f = 0;
         int randomNums = digit.nextInt(10) + 1;
-
-        if (randomNums > -5) {
-            System.out.println();
-        } else {
-            System.out.println();
-        }
 
         switch (randomNums) {
             case 1 -> {
@@ -613,6 +608,209 @@ public class Questions {
                     System.out.println("2. Greece");
                     System.out.println("3. America");
                     System.out.println("4. Germany");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+            }
+
+        Random ap = new Random();
+        int randos = ap.nextInt(5) + 1;
+
+            switch(randos) {
+                case 1 -> {
+                    System.out.println("How Many Players Are On A Rugby League Team?");
+                    System.out.println("1. 13");
+                    System.out.println("2. 11");
+                    System.out.println("3. 7");
+                    System.out.println("4. 16");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 1!\n");
+                    }
+                }
+
+                case 2 -> {
+                    System.out.println("Who won the FIFA Women's World Cup in 2019?");
+                    System.out.println("1. Germany");
+                    System.out.println("2. Australia");
+                    System.out.println("3. England");
+                    System.out.println("4. Usa");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 3 -> {
+                    System.out.println("In Football, Which Team Has Won The Champions League The Most?");
+                    System.out.println("1. Barcelona");
+                    System.out.println("2. Real Madrid");
+                    System.out.println("3. Arsenal");
+                    System.out.println("4. Chelsea");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("Which vitamin is the only one that you will not find in an egg?");
+                    System.out.println("1. Vitamin C");
+                    System.out.println("2. Vitamin A");
+                    System.out.println("3. Vitamin B");
+                    System.out.println("4. Vitamin D");
+                    a = b.next();
+
+                    while(a.equals("1")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 1!\n");
+                    }
+                }
+
+                case 5 -> {
+                    System.out.println("Which singer has the most UK Number One singles ever?");
+                    System.out.println("1. Ed Sheeran");
+                    System.out.println("2. Elvis Presley");
+                    System.out.println("3. Stormzy");
+                    System.out.println("4. Lewis Capaldi");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 6 -> {
+                    System.out.println("Which year was the Premier League founded?");
+                    System.out.println("1. 1879");
+                    System.out.println("2. 1978");
+                    System.out.println("3. 1953");
+                    System.out.println("4. 1992");
+                    a = b.next();
+
+                    while(a.equals("four")) {
+                        a = "4";
+                    }
+
+                    if(a.equals("4")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 4!\n");
+                    }
+                }
+
+                case 7 -> {
+                    System.out.println("Who has scored most career goals?");
+                    System.out.println("1. Neymar");
+                    System.out.println("2. Lionel Messi");
+                    System.out.println("3. Cristiano Ronaldo");
+                    System.out.println("4. Eden Hazard");
+                    a = b.next();
+
+                    while(a.equals("three")) {
+                        a = "3";
+                    }
+
+                    if(a.equals("3")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 3!\n");
+                    }
+                }
+
+                case 8 -> {
+                    System.out.println("Which club won the 2017 UEFA Super Cup?");
+                    System.out.println("1. Barcelona");
+                    System.out.println("2. PSG");
+                    System.out.println("3. Real Madrid");
+                    System.out.println("4. Manchester City");
+                    a = b.next();
+
+                    while(a.equals("three")) {
+                        a = "3";
+                    }
+
+                    if(a.equals("3")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 3!\n");
+                    }
+                }
+
+                case 9 -> {
+                    System.out.println("Which footballer has the most Instagram followers in the world - as of 2020?");
+                    System.out.println("1. Lionel Messi");
+                    System.out.println("2. Neymar");
+                    System.out.println("3. Cristiano Ronaldo");
+                    System.out.println("4. Zlatan Ibrahimović");
+                    a = b.next();
+
+                    while(a.equals("three")) {
+                        a = "3";
+                    }
+
+                    if(a.equals("3")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 3!\n");
+                    }
+                }
+
+                case 10 -> {
+                    System.out.println("A woman has walked on the Moon");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
                     a = b.next();
 
                     while(a.equals("two")) {

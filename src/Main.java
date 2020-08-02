@@ -7,5 +7,6 @@ public class Main {
 
         Questions.questionsData(questions, input, Questions.getScore());
         System.out.print("Your Final Score Is " + Questions.getScore());
+        System.exit(0);
     }
 }
