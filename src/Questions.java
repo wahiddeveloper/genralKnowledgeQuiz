@@ -1007,5 +1007,190 @@ public class Questions {
                     }
                 }
             }
+
+        Random switch6 = new Random();
+        int switchF = switch5.nextInt(5) + 1;
+
+            switch(switchF) {
+                case 1 -> {
+                    System.out.println("Snakes hear noises through their jaw bone");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 2 -> {
+                    System.out.println("The smallest bones in the human body are in the nose");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 3 -> {
+                    System.out.println("Fish hear sound through very small ears located 5cm from their eyes");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("Smokers are 2x more likely to lose their hearing than non smokers");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 5 -> {
+                    System.out.println("Ears not only help you hear but also help you balance");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 6 -> {
+                    System.out.println("The loudest sound ever recorded was the blast from the Mars Lunar Rocket launch at Cape Cod in 1986");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 7 -> {
+                    System.out.println(" Sound travels at exactly 770 miles per hour");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 8 -> {
+                    System.out.println("The noise of a Blue Whale is louder than a jet engine");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 9 -> {
+                    System.out.println("The Tiger Pistol Shrimp is the loudest animal in the world");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 10 -> {
+                    System.out.println("he sound of the human voice talking is usually about 10 decibels");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+            }
         }
     }
