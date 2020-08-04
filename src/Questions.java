@@ -1377,5 +1377,190 @@ public class Questions {
                    }
                }
             }
+
+        Random switch8 = new Random();
+        int switchH = switch8.nextInt(5) + 1;
+
+        switch(switchH) {
+                case 1 -> {
+                    System.out.println("the five rings on the Olympic flag are interlocking?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 2 -> {
+                    System.out.println("Mount Kilimanjaro is the highest mountain in the world?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 3 -> {
+                    System.out.println("Strictly Come Dancing first aired in the UK in 2005?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("a group of swans is known as a bevy?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 5 -> {
+                    System.out.println("Sydney is the capital of Australia?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 6 -> {
+                    System.out.println("the Penny Black is an old-fashioned coin?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 7 -> {
+                    System.out.println("Glastonbury had been due to celebrate its 50th anniversary in June before the festival was cancelled?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 8 -> {
+                    System.out.println("Will.i.am is the only mentor to have appeared on every single series of The Voice UK?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 9 -> {
+                    System.out.println("a heptagon has eight sides?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 10 -> {
+                    System.out.println("the star sign Capricorn is represented by a goat?");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+            }
         }
     }
