@@ -852,7 +852,7 @@ public class Questions {
                 case 2 -> {
                     System.out.println("There are McDonald’s one every continent except one");
                     System.out.println("1. True");
-                    System.out.println("2. True");
+                    System.out.println("2. False");
                     a = b.next();
 
                     if(a.equals("1")) {
@@ -1009,7 +1009,7 @@ public class Questions {
             }
 
         Random switch6 = new Random();
-        int switchF = switch5.nextInt(5) + 1;
+        int switchF = switch6.nextInt(5) + 1;
 
             switch(switchF) {
                 case 1 -> {
@@ -1191,6 +1191,191 @@ public class Questions {
                         System.out.println("Unlucky! The Answer Is True!\n");
                     }
                 }
+            }
+
+        Random switch7 = new Random();
+        int switchG = switch7.nextInt(5) + 1;
+
+        switch(switchG) {
+               case 1 -> {
+                   System.out.println("Prince Harry is taller than Prince William");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
+
+               case 2 -> {
+                   System.out.println("The star sign Aquarius is represented by a tiger");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("one")) {
+                       a = "1";
+                   }
+
+                   if(a.equals("1")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is True!\n");
+                   }
+               }
+
+               case 3 -> {
+                   System.out.println("Meryl Streep has won two Academy Awards");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
+
+               case 4 -> {
+                   System.out.println("Marrakesh is the capital of Morocco");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
+
+               case 5 -> {
+                   System.out.println("Idina Menzel sings 'let it go' 20 times in 'Let It Go' from Frozen");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
+
+               case 6 -> {
+                   System.out.println("Waterloo has the greatest number of tube platforms in London");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("one")) {
+                       a = "1";
+                   }
+
+                   if(a.equals("1")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is True!\n");
+                   }
+               }
+
+               case 7 -> {
+                   System.out.println("M&M stands for Mars and Moordale");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
+
+               case 8 -> {
+                   System.out.println("Gin is typically included in a Long Island Iced Tea");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("one")) {
+                       a = "1";
+                   }
+
+                   if(a.equals("1")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is True!\n");
+                   }
+               }
+
+               case 9 -> {
+                   System.out.println("The unicorn is the national animal of Scotland");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("one")) {
+                       a = "1";
+                   }
+
+                   if(a.equals("1")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is True!\n");
+                   }
+               }
+
+               case 10 -> {
+                   System.out.println("There are two parts of the body that can't heal themselves");
+                   System.out.println("1. True");
+                   System.out.println("2. False");
+                   a = b.next();
+
+                   while(a.equals("two")) {
+                       a = "2";
+                   }
+
+                   if(a.equals("2")) {
+                       System.out.println("Well Done! Next Question\n");
+                       setScore();
+                   } else {
+                       System.out.println("Unlucky! The Answer Is 2!\n");
+                   }
+               }
             }
         }
     }
