@@ -1562,5 +1562,140 @@ public class Questions {
                     }
                 }
             }
+
+        Random switch9= new Random();
+        int switchI = switch9.nextInt(5) + 1;
+
+        switch(switchI) {
+                case 1 -> {
+                    System.out.println("London buses are red");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 2 -> {
+                    System.out.println("Cows drink milk");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 3 -> {
+                    System.out.println("Goldfish have good memory");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("Manchester is in the north of the uk");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 5 -> {
+                    System.out.println("The world population is 12 billion");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 6 -> {
+                    System.out.println("Pewdipie is the most subscribed youtuber in the world");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("two")) {
+                        a = "2";
+                    }
+
+                    if(a.equals("2")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is 2!\n");
+                    }
+                }
+
+                case 7 -> {
+                    System.out.println("Java is an object oriented programming language");
+                    System.out.println("1. True");
+                    System.out.println("2. False");
+                    a = b.next();
+
+                    while(a.equals("one")) {
+                        a = "1";
+                    }
+
+                    if(a.equals("1")) {
+                        System.out.println("Well Done! Next Question\n");
+                        setScore();
+                    } else {
+                        System.out.println("Unlucky! The Answer Is True!\n");
+                    }
+                }
+
+                case 8 -> {
+                    System.out.println("");
+                }
+            }
         }
     }
